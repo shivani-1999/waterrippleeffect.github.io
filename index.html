@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        *
+        {
+            box-sizing: border-box;
+        }
+        .demo
+        {
+            width: 100%;
+            height: 100vh;
+            background-image: url('1.jpg');
+            background-size: 100% 100%;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="demo" ></div>
+        
+<script src="jq.js"></script>
+<script src="jquery.ripples-min.js"></script>
+<script>
+$('.demo').ripples({
+
+  imageUrl: null,
+
+  resolution: 256,
+
+  dropRadius: 20,
+
+  perturbance: 0.04,
+
+  interactive: true,
+
+  crossOrigin: ''
+
+});
+
+</script>    
+</body>
+</html>
